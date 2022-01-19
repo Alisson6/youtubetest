@@ -1,4 +1,145 @@
+body{
+width: 100%;
+height: 100%;
+background-color: #181818;
+
+}
+#container{
+
+
+}
+#container__bottom{
+    display: grid;
+grid-template-columns: 1fr 5fr;
+grid-template-areas: "n m";
+padding-top: 55px;
+}
+/*HEADER*/
+#nav div{
+margin-top: 100px;
+    color: white;
+}
 #header{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    height: 50px;
+    position: fixed;
+    
 }
+
+#header__logo{}
+
+#input__style{
+    background-color: #121212;
+    color: #b3b3b3;
+    border-color: #333333;
+    width: 700px;
+    height: 27px;
+    
+}
+.input__icon{
+  
+}
+/*header_menu*/
+.header__menu{}
+.menu__Criar{}
+.menu__aplicativos{}
+.menu__notificacoes{}
+.menu__perfil{}
+/*HEADER-END*/
+
+/*MAIN*/
+#main{
+    margin-left: 20px;
+    grid-area:m;
+
+}
+#main__ul{
+ 
+}
+#main__li{
+display: inline-flex;
+}
+
+.layout__video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:240px;
+    height:240px;
+    margin: auto 18px;
+
+}
+.layout__video img{
+    max-width: 250px;
+
+}
+
+
+/*CANAL*/
+#layout__channel{
+    margin: 5px ;
+    width: 100%;
+    display:flex;
+    align-items: center;
+
+}
+#layout__channel h2{
+    color: white;
+   margin-left: 8px;
+    font-weight:600;
+   font-size: large;
+   overflow: hidden;
+   text-overflow:ellipsis;
+   white-space: nowrap;
+    height: 40px;
+   
+   
+   
+
+  
+}
+#layout__channel img{
+    width: 30px;
+    height: 30px;
+    border-radius:100%;
+}
+/*CANAL__END*/
+
+/*TITULOVIDEO*/
+#layout__texts{
+
+}
+#layout__texts p{
+    color: #b3b3b3;
+    
+}
+.layout__views{
+display: flex;
+
+}
+.layout__canal{}
+/*TITULOVIDEO__END*/
+
+/*TITULO*/
+#nav{
+    grid-area: n;
+   min-height: 100vh;
+    background-color: #212121;
+}
+
+#nav__inicio{
+    
+}
+#inicio__inicio{}
+#inicio__explorar{}
+#inicio__incricoes{}
+/*INICIO__END*/
+#nav__opcoes{}
+#nav__incricoes{}
+/*TITULO_END*/
