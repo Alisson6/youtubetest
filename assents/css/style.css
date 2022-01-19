@@ -31,8 +31,36 @@ margin-top: 100px;
     
 }
 
-#header__logo{}
+#header__logo{
+ 
+   
+}
+#header__row{
+   display:flex;
+   align-items: center;
+}
+#row__logo img{
+    width:60px;
 
+}
+#row__logo a{
+    font-weight: bold;
+    color: white;
+    font-size: 17pt;
+    text-align: center;
+    text-decoration: none;
+}
+
+#row__menu{
+    margin-right: 40px;
+    padding-left: 10px;
+}
+
+#row__menu a img{
+    width: 34px;
+   
+   
+}
 #input__style{
     background-color: #121212;
     color: #b3b3b3;
