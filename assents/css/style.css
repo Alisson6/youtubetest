@@ -1,3 +1,6 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body{
 width: 100%;
 height: 100%;
@@ -14,7 +17,7 @@ grid-template-columns: 1fr 5fr;
 grid-template-areas: "n m";
 padding-top: 55px;
 }
-/*HEADER*/
+/*HEADER=======================================*/
 #nav div{
 margin-top: 100px;
     color: white;
@@ -26,8 +29,11 @@ margin-top: 100px;
     justify-content: space-between;
     align-items: center;
     background-color: #202020;
-    height: 50px;
+    height: 55px;
     position: fixed;
+   flex-wrap: nowrap;
+   white-space: nowrap;
+
     
 }
 
@@ -38,47 +44,83 @@ margin-top: 100px;
 #header__row{
    display:flex;
    align-items: center;
+   
+}
+#row__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #row__logo img{
     width:60px;
 
 }
-#row__logo a{
+#row__logo p{
+    float: right;
     font-weight: bold;
     color: white;
     font-size: 17pt;
     text-align: center;
     text-decoration: none;
+    
 }
 
 #row__menu{
-    margin-right: 40px;
-    padding-left: 10px;
+    margin-right: 31px;
+    padding-left: 36px;
 }
 
 #row__menu a img{
-    width: 34px;
+    width: 27px;
    
    
 }
-#input__style{
+#search__style{
     background-color: #121212;
     color: #b3b3b3;
     border-color: #333333;
-    width: 700px;
+    width: 100%;
     height: 27px;
     
 }
-.input__icon{
+#search{
+    width: 500px;
+    padding: 0 20px 0 20px;
+}
+
+.search__icon{
   
 }
 /*header_menu*/
-.header__menu{}
+#header__menu{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+}
 .menu__Criar{}
-.menu__aplicativos{}
-.menu__notificacoes{}
-.menu__perfil{}
-/*HEADER-END*/
+.menu__style{
+    width: 23px;
+    margin: 0 10px 0 10px;
+    
+}
+.menu__style--marginleftright{
+    width: 23px;
+    margin: 0 10px 0 10px;
+    
+}
+.menu__style--circle{
+    width: 35px;
+    margin: 0 10px 0 10px;
+   
+}
+#menu__aplicativos{}
+#h
+{
+    margin-right: 5px;
+}
+#menu__perfil{}
+/*HEADER-END=======================================*/
 
 /*MAIN*/
 #main{
@@ -155,19 +197,40 @@ display: flex;
 /*TITULOVIDEO__END*/
 
 /*TITULO*/
+
+
+
+
+/*NAV=======================================*/
+.nav--topbottom{
+margin: 11px 0 11px 0;
+text-align: center;
+
+}
+.nav--topbottom p {
+    color: white;
+margin-top: 4px;
+}
 #nav{
-    grid-area: n;
+   width:13vh;
    min-height: 100vh;
     background-color: #212121;
 }
+#nav__columm{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 16px;
 
+}
 #nav__inicio{
     
 }
-#inicio__inicio{}
-#inicio__explorar{}
-#inicio__incricoes{}
-/*INICIO__END*/
-#nav__opcoes{}
+#nav__explorar{}
 #nav__incricoes{}
-/*TITULO_END*/
+
+#nav__biblioteca{}
+.nav__img{
+    width: 32px;
+}
+/*NAV_END=======================================*/
